@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Varshini Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Hello, I'm Varshini</h1>
+        <h2>Java Developer</h2>
+        <p>I am passionate about Java and Web Development.</p>
+        <button>View My Work</button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science Engineering graduate interested
+            in Java development, web development and software development.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div>Java</div>
+            <div>Python</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>SQL</div>
+            <div>JavaScript</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Student Management System</h3>
+            <p>Developed using Java and SQL.</p>
+        </div>
+
+        <div class="project">
+            <h3>Responsive Login Page</h3>
+            <p>Created using HTML and CSS.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: varshiniarumugam7@gmail.com</p>
+        <p>Phone: +91 9715325456</p>
+    </section>
+
+</body>
+</html>
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background: #222;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00adb5;
+}
+
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+#home {
+    background: #00adb5;
+    color: white;
+    min-height: 400px;
+    padding-top: 120px;
+}
+
+#home h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.skills div {
+    background: white;
+    padding: 20px 35px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px gray;
+}
+
+.project {
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+
+public class Portfolio {
+
+    public static void main(String[] args) {
+
+        String name = "Varshini";
+        String role = "Java Developer";
+
+        System.out.println("Welcome to My Portfolio");
+        System.out.println("Name: " + name);
+        System.out.println("Role: " + role);
+        System.out.println("Skills: Java, Python, HTML, CSS, SQL");
+    }
+}
+
